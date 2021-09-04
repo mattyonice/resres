@@ -1,0 +1,28 @@
+  <connectionStrings>
+    <add name="DBCS"
+          connectionString="server=.; database=Sample2; integrated security=SSPI"
+           providerName="System.Data.SqlClient" />
+  </connectionStrings>
+
+
+
+use sample2 
+go
+
+create table tblBussAprilEmployee
+(
+	Id int primary key identity(1,1),
+	Name nvarchar(50),
+	Gender nvarchar(50),
+	City nvarchar(50),
+	DateOfBirth DateTime
+)
+
+select * from tblBussAprilEmployee
+
+create proc spBussAprilGetAllEmployees
+as
+begin
+	select Id, Name, Gender, City, DateOfBirth
+	from tblBussAprilEmployee
+end
