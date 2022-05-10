@@ -1,4 +1,4 @@
-const toggleBtn = document.querySelector('.fs-4');
+const toggleBtn = document.querySelector('.fs-1');
 
 toggleBtn.addEventListener('click', e => {
     console.log('btn clicked');
