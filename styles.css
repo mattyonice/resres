@@ -2,3 +2,10 @@
     background-color: black;
     color: white;
 }
+
+
+.flip {
+    display: inline-block;
+    transform: scaleX(-1); /* standard */
+    filter: FlipH; /* IE 6/7/8 */
+  }
