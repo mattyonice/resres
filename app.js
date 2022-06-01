@@ -2,6 +2,7 @@ const toggleBtn = document.querySelector('.fs-1');
 const iconRev = document.getElementById('iconRev');
 const pdf = document.getElementById('pdf');
 
+
 toggleBtn.addEventListener('click', e => {
     // console.log('toggle dartk light clicked');
     var e = document.body;
@@ -15,6 +16,8 @@ toggleBtn.addEventListener('click', e => {
         pdf.classList.add('text-light');
 
         iconRev.classList.remove('flip');
+        localStorage.setItem('darkLight', 1);
+
     }
     else {
         toggleBtn.classList.remove('text-light');
@@ -24,6 +27,8 @@ toggleBtn.addEventListener('click', e => {
         pdf.classList.add('text-dark');
 
         iconRev.classList.add('flip');
+        localStorage.setItem('darkLight', 0);
+
     }
 
 
