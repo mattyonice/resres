@@ -1,40 +1,39 @@
 const toggleBtn = document.querySelector('.fs-1');
 const iconRev = document.getElementById('iconRev');
-
+const pdf = document.getElementById('pdf');
 
 toggleBtn.addEventListener('click', e => {
-    console.log('btn clicked');
+    // console.log('toggle dartk light clicked');
     var e = document.body;
     e.classList.toggle("dark");
 
     if (toggleBtn.classList.contains('text-dark')) {
         toggleBtn.classList.remove('text-dark');
         toggleBtn.classList.add('text-light');
+
+        pdf.classList.remove('text-dark');
+        pdf.classList.add('text-light');
+
         iconRev.classList.remove('flip');
     }
     else {
         toggleBtn.classList.remove('text-light');
         toggleBtn.classList.add('text-dark');
+
+        pdf.classList.remove('text-light');
+        pdf.classList.add('text-dark');
+
         iconRev.classList.add('flip');
     }
 
-    
+
 });
 
-// const toggleBtn = document.querySelector('.btn-dark');
+const body = document.querySelector('body');
 
-// toggleBtn.addEventListener('click', e => {
-//     console.log('btn clicked');
-//     var e = document.body;
-//     e.classList.toggle("dark");
-//     if (toggleBtn.textContent === 'light') {
-//         toggleBtn.textContent = 'dark';
-//         toggleBtn.classList.remove('btn-light');
-//         toggleBtn.classList.add('btn-dark');
-
-//     } else {
-//         toggleBtn.textContent = 'light';
-//         toggleBtn.classList.remove('btn-dark');
-//         toggleBtn.classList.add('btn-light');
-//     }
-// });
+pdf.addEventListener('click', e => {
+    console.log('clicked pdf');
+    html2pdf()
+        .from(body)
+        .save();
+});
