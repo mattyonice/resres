@@ -3,6 +3,13 @@
     color: white;
 }
 
+.dark>a {
+    color: lightblue;
+}
+
+.dark>a:hover {
+    color: white;
+}
 
 .flip {
     display: inline-block;
