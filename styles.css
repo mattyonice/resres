@@ -11,6 +11,16 @@
     color: white;
 }
 
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    /* color: lightblue; */
+    text-decoration: underline;
+}
+
 .flip {
     display: inline-block;
     transform: scaleX(-1);
