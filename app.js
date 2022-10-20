@@ -1,7 +1,8 @@
 const toggleBtn = document.querySelector('.fs-1');
 const iconRev = document.getElementById('iconRev');
 const pdf = document.getElementById('pdf');
-
+// const share = document.getElementById('share');
+// share.classList.add('flip')
 
 toggleBtn.addEventListener('click', e => {
     // console.log('toggle dartk light clicked');
