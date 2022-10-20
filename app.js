@@ -38,7 +38,7 @@ toggleBtn.addEventListener('click', e => {
 const body = document.querySelector('body');
 
 pdf.addEventListener('click', e => {
-    console.log('clicked pdf');
+    // console.log('clicked pdf');
     html2pdf()
         .from(body)
         .save();
