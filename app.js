@@ -43,3 +43,11 @@ pdf.addEventListener('click', e => {
         .from(body)
         .save();
 });
+
+
+// document.getElementById('pdfLink').addEventListener('click', e => {
+//     console.log('clicked url');
+//     html2pdf()
+//         .from(body)
+//         .save();
+// });
